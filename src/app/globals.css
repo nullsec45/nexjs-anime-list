@@ -2,8 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+*,*::before,*::after{
+  padding:0;
+  margin:0;
+  box-sizing: border-box;
+}
+
 img{
   width:100%;
+  min-height: 300px;
+  max-height: 400px;
   height: auto;
   transition: .3s ease all;
   -webkit-transition: .3s ease all;
@@ -13,5 +21,5 @@ img{
 }
 
 img:hover{
-  scale:102%
+  scale:102%z
 }
