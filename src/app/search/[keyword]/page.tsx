@@ -7,11 +7,9 @@ interface Params{
 }
 
 const Page : React.FC<{params:Params}> = async ({params}) => {
-  const {keyword} = await params
+  const {keyword} =  params
   const response=await fetch(`${process.env.NEXT_PUBLIC_API_BASE_URL}/anime?q=${keyword}`);
   const searchAnime=await response.json();
-
-
 
   return (
     <>
