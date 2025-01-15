@@ -1,4 +1,4 @@
-import React,{ReactNode} from 'react'
+import React from 'react'
 import AnimeList from "@/app/components/AnimeList";
 import HeaderAnimeList from "@/app/components/AnimeList/header";
 
