@@ -35,9 +35,9 @@ const AnimeList:React.FC<AnimeListProps> = ({animes}) => {
           {
             animes.data.map((anime:AnimeData) => {
               return (
-               <Link href={`/${anime.mal_id}`} className="cursor-pointer" key={anime.mal_id}>
+               <Link href={`/${anime.mal_id}`} className="cursor-pointer hover:text-color-accent text-color-primary transitioa-all" key={anime.mal_id}>
                    <Image src={anime.images.webp.image_url} alt="..." width={350} height={350} className="w-full"/>
-                   <h3 className="font-bold md:text-xl text-md p-4">{anime.title}</h3>
+                   <h3 className="font-bold md:text-xl text-md p-4 text-color-primary hover:text-color-accent">{anime.title}</h3>
                  </Link>
               )
             })
