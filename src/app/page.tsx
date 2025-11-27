@@ -1,5 +1,5 @@
-import AnimeList from "@/app/components/AnimeList";
-import HeaderAnimeList from "@/app/components/AnimeList/header";
+import AnimeList from "@/components/AnimeList";
+import HeaderAnimeList from "@/components/AnimeList/header";
 
 const Page=async () => {
   const response=await fetch(`${process.env.NEXT_PUBLIC_API_BASE_URL}/top/anime?limit=8`);
