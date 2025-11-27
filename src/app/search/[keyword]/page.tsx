@@ -1,6 +1,6 @@
 import React from 'react'
-import AnimeList from "@/app/components/AnimeList";
-import HeaderAnimeList from "@/app/components/AnimeList/header";
+import AnimeList from "@/components/AnimeList";
+import HeaderAnimeList from "@/components/AnimeList/header";
 
 const Page = async function ({
   params,
